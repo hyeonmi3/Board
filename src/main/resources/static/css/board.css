@@ -1,0 +1,231 @@
+html {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* list css */
+.list_all {
+    width: 100%;
+    height: 500px;
+
+    margin-bottom: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.list td,th {
+    border: 1px solid #CCC;
+    padding: 5px;
+    min-width: 100px;
+}
+
+.list_button {
+    width: 60%;
+
+    margin-top: 4%;
+}
+
+.list_button > a {
+    padding: 10px 30px 10px 30px;
+
+    background-color: #4f8fcc;
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* view css */
+.content_all {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    height: 300px;
+
+    border-collapse: collapse;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content > div {
+    width: 100%;
+
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.content > div > label {
+    margin-right: 10px;
+    padding: 7px;
+
+    min-width: 100px;
+
+    background-color: #4f8fcc;
+    color: #FFFFFF;
+
+    border: 1px solid #4f8fcc;
+}
+
+.content > div > span {
+    width: 600px;
+
+    border: 1px solid #CCC;
+    padding: 5px;
+    min-width: 100px;
+}
+
+.view_content {
+    height: 300px;
+}
+
+.view_button {
+    width: 100%;
+}
+
+.view_button > a {
+    padding: 10px 30px 10px 30px;
+
+    margin-right: 20px;
+
+    background-color: #4f8fcc;
+}
+
+.view_button > a > button {
+    width: 48px;
+    height: 21px;
+
+    border: 0;
+
+    background-color: #4f8fcc;
+    color: #FFF;
+}
+
+/* update css */
+.update_all {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update {
+    width: 100%;
+    height: 300px;
+
+    border-collapse: collapse;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.update > div {
+    width: 100%;
+
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.update > div > label {
+    background-color: #4f8fcc;
+    color: #FFF;
+
+    padding: 10px;
+
+    margin-right: 10px;
+}
+
+.update > div > input {
+    width: 612px;
+
+    border: 1px solid #CCC;
+}
+
+.update > div > button {
+    border: 0;
+
+    background-color: #4f8fcc;
+    color: #FFF;
+}
+
+/* write css */
+.write_all {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write {
+    width: 100%;
+    height: 300px;
+
+    border-collapse: collapse;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write > div {
+    width: 100%;
+
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.write > div > label {
+    background-color: #4f8fcc;
+    color: #FFF;
+
+    padding: 10px;
+
+    margin-right: 10px;
+}
+
+.write > div > input {
+    width: 612px;
+
+    border: 1px solid #CCC;
+}
+
+.write > div > button {
+    border: 0;
+
+    background-color: #4f8fcc;
+    color: #FFF;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Song</title>
+
+  <link href="/css/board.css?1" rel="stylesheet">
+
+</head>
+<body>
+<h1>게시글 수정</h1>
+
+<div class="update_all">
+  <form class="update" action="../update-save.do" method="post">
+    <input type="hidden" name="idx" th:value="${board.idx}">
+    <div>
+      <label>제목</label>
+      <input type="text" name="title" th:value="${board.title}">
+    </div>
+    <div>
+      <label>내용</label>
+      <input style="height: 312px" type="text" name="content" th:value="${board.content}">
+    </div>
+
+    <div>
+      <label>작성자</label>
+      <input type="text" name="author" th:value="${board.author}">
+    </div>
+
+    <div>
+      <button style="width: 108px; height: 41px">저장</button>
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
