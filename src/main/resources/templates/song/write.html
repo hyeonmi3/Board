@@ -2,33 +2,33 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Song</title>
-
-    <link href="/css/board.css?1" rel="stylesheet">
-
+    <title>Write</title>
+    <link href="/css/wrtie.css?1" rel="stylesheet">
 </head>
 <body>
-<h1>글쓰기</h1>
-
+<header>
+    <h1>:)BOARD</h1>
+</header>
 <div class="write_all">
+    <h2>글쓰기</h2>
     <form class="write" action="write-save.do" method="post">
         <div>
-            <label>제목</label>
+            <label><p>제목</p></label>
             <input type="text" name="title">
         </div>
 
         <div>
-            <label>내용</label>
-            <input style="height: 312px" type="text" name="content">
+            <label><p>내용</p></label>
+            <input style="height: 280px;" type="text" name="content">
         </div>
 
         <div>
-            <label>작성자</label>
+            <label><p>작성자</p></label>
             <input type="text" name="author">
         </div>
 
-        <div>
-            <button style="width: 108px; height: 41px">등록</button>
+        <div style="align-items: flex-end;">
+            <button style="width: 108px; height: 41px"><span>등록</span></button>
         </div>
 
     </form>

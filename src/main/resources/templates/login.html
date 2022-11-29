@@ -2,33 +2,77 @@
 <html lang="ko" xmlns:xnlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>스프링 수업</title>
+    <title>Login</title>
     <style>
-        label {
-            display: inline-block;
-            width: 100px;
-            text-align: right;
-            margin-right: 10px;
+        * {
+            margin: 0;
         }
-        div {
-            padding: 5px;
+        header {
+            width: 100%;
+            height: 70px;
+
+            padding-left: 100px;
+
+            border: 1px solid #E1E1E1CC;
+
+            display: flex;
+            align-items: center;
+        }
+        .login_all {
+            width: 100%;
+            height: 650px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .login_all > h1 {
+            margin-bottom: 35px;
+        }
+        .login_all > form > div > label > p {
+            margin-bottom: 5px;
+        }
+        .login_all > form > div > input {
+            width: 200px;
+            height: 28px;
+
+            margin-bottom: 25px;
+
+            padding-left: 10px;
+
+            border: 1px solid #D7D7D7CC;
+            border-radius: 3px;
+        }
+        .login_all > form > div > button {
+            width: 90px;
+            height: 39px;
+
+            border: 0;
+            border-radius: 3px;
+
+            background-color: #4090ff;
+            color: #FFF;
         }
     </style>
 </head>
 <body>
-    <h1>로그인</h1>
-    <div>
+    <header>
+        <h1>:)BOARD</h1>
+    </header>
+    <div class="login_all">
+        <h1>Login</h1>
         <form action="/login" method="post">
             <div>
-                <label>아이디</label>
-                <input type="text" name="id">
+                <label><p>아이디</p></label>
+                <input type="text" name="id" placeholder="id">
             </div>
             <div>
-                <label>비밀번호</label>
-                <input type="password" name="password">
+                <label><p>비밀번호</p></label>
+                <input type="password" name="password" placeholder="password">
             </div>
-            <div>
-                <button>로그인</button>
+            <div style="display: flex; justify-content: flex-end;">
+                <button><span>로그인</span></button>
             </div>
         </form>
     </div>
