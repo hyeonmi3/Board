@@ -95,7 +95,16 @@ public class BoardController {
     public String delete(@PathVariable("idx") Long idx) {
         boardService.delete(idx);
 
-        return "redirect:../list";
+        return "redirect:/list";
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
 }

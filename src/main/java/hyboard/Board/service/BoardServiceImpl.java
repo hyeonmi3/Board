@@ -21,18 +21,6 @@ public class BoardServiceImpl implements BoardService {
         this.boardRepository = boardRepository;
     }
 
-    @PostConstruct
-    public void prepare() {
-        BoardEntity songEntity = new BoardEntity();
-        songEntity.setTitle("테스트 게시글");
-        songEntity.setContent("내용입니다");
-        songEntity.setAuthor("작성자");
-        songEntity.setCreatedAt(LocalDateTime.now());
-        songEntity.setViewCount(0);
-        boardRepository.save(songEntity);
-    }
-
-
     @Override
     public Board write(Board board) {
         /*
