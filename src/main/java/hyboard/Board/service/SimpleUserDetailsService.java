@@ -38,13 +38,6 @@ public class SimpleUserDetailsService implements UserDetailsService {
             user.setName("바");
             user.setGrade(3);
             details = new MyUserDetails(user);
-        } else if (username.equals("tom")) {
-            user = new User();
-            user.setId("tom");
-            user.setPassword(passwordEncoder.encode("1256"));
-            user.setName("톰");
-            user.setGrade(1);
-            details = new MyUserDetails(user);
         }
 
         return details;

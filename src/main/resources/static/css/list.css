@@ -3,7 +3,7 @@
 }
 
 header {
-    width: 100%;
+    width: 1850px;
     height: 70px;
 
     padding-left: 100px;
@@ -12,10 +12,16 @@ header {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.login_signup {
+    display: flex;
+    margin-right: 100px;
 }
 
 .list_all {
-    width: 100%;
+    width: 1850px;
     height: 650px;
 
     margin-top: 48px;
