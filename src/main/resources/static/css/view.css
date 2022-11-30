@@ -31,8 +31,6 @@ header {
 }
 
 .content > div {
-    height: 50px;
-
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -48,11 +46,14 @@ header {
     border-left: 3px solid #E1E1E1CC;
 }
 
+.view_button {
+    margin-top: 150px;
+}
+
 .view_button > a > button {
     width: 108px;
     height: 41px;
 
-    margin-top: 150px;
     margin-right: 10px;
 
     border: 0;

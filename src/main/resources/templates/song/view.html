@@ -21,15 +21,15 @@
         <h2>게시글 내용</h2>
         <input type="hidden" name="idx" th:value="${board.idx}">
         <div class="content">
-            <div>
+            <div style="height: 50px;">
                 <label>제목</label>
                 <span th:text="${board.title}"></span>
             </div>
-            <div>
+            <div style="height: 50px;">
                 <label>내용</label>
                 <span class="view_content" th:text="${board.content}"></span>
             </div>
-            <div>
+            <div style="height: 50px;">
                 <label>작성자</label>
                 <span th:text="${board.author}"></span>
             </div>

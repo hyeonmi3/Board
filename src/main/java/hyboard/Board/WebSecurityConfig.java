@@ -19,13 +19,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/image/**").permitAll()
                 .antMatchers("/song/**").hasRole("ADMIN")
-                .anyRequest().authenticated();
+                .antMatchers("/list", "/css/**").permitAll()
+                .anyRequest().authenticated(); // 나머지는 인증 필요
 
         http.csrf().disable();
 
         http.formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/hello")
+                .defaultSuccessUrl("/")
                 .usernameParameter("id")
                 .permitAll();
 

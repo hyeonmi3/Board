@@ -20,6 +20,12 @@ public class BoardController {
         this.boardService = boardService;
     }
 
+    @RequestMapping("/")
+    public String home() {
+        return "redirect:/list";
+    }
+
+
     @RequestMapping("/write")
     public String add() {
         return "song/write";
@@ -98,13 +104,8 @@ public class BoardController {
         return "redirect:/list";
     }
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "hello";
-    }
-
     @GetMapping("/login")
     public String login() {
-        return "login";
+        return "user/login";
     }
 }
